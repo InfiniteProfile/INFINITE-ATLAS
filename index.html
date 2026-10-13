@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="Explore an endless universe of generated identities.">
+  <title>INFINITE ATLAS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Infinite Atlas home">
+      <span class="brand-icon">∞</span>
+      <span>INFINITE <span class="gold">ATLAS</span></span>
+    </a>
+    <span class="status"><i></i> UNIVERSE ONLINE</span>
+  </header>  <main>
+    <section class="hero">
+      <div class="eyebrow">THE INFINITE IDENTITY PROJECT</div>
+      <h1>Beyond every<br>known <span>limit.</span></h1>
+      <p class="intro">
+        An endless universe of identities. Every number opens a different
+        destination. There is no final profile to discover.
+      </p>  <form id="searchForm" class="search-box">
+    <span class="search-icon" aria-hidden="true">⌕</span>
+    <input
+      id="searchInput"
+      type="text"
+      inputmode="numeric"
+      autocomplete="off"
+      spellcheck="false"
+      placeholder="Enter any profile number..."
+      aria-label="Search profile number"
+    >
+    <button type="submit">EXPLORE ↗</button>
+  </form>
+
+  <div class="search-hint">
+    TRY <button class="example" data-number="1">#1</button>
+    <button class="example" data-number="999999">#999999</button>
+    <button class="example" data-number="999999999999999999999999999999">
+      BEYOND LIMITS
+    </button>
+  </div>
+
+  <div class="stats">
+    <div>
+      <span class="stat-label">PROFILE SPACE</span>
+      <strong>∞</strong>
+      <span class="stat-note">No predefined endpoint</span>
+    </div>
+    <div>
+      <span class="stat-label">IDENTITY ENGINE</span>
+      <strong>ACTIVE</strong>
+      <span class="stat-note">Generated on demand</span>
+    </div>
+    <div>
+      <span class="stat-label">CURRENT POSITION</span>
+      <strong id="position">#1</strong>
+      <span class="stat-note">Explore your universe</span>
+    </div>
+  </div>
+</section>
+
+<section class="directory">
+  <div class="section-heading">
+    <div>
+      <div class="eyebrow">THE DIRECTORY</div>
+      <h2>Infinite identities<span>.</span></h2>
+    </div>
+    <span class="live-count" id="count">0 IDENTITIES</span>
+  </div>
+
+  <div id="profileGrid" class="profile-grid"></div>
+
+  <div id="sentinel" class="sentinel" aria-hidden="true"></div>
+
+  <div id="loading" class="loading" role="status">
+    <span class="spinner"></span>
+    Mapping new identities...
+  </div>
+
+  <div class="jump-panel">
+    <p>KNOW YOUR DESTINATION?</p>
+    <form id="jumpForm" class="jump-form">
+      <input id="jumpInput" type="text" inputmode="numeric"
+        autocomplete="off" placeholder="Enter an exact profile number"
+        aria-label="Jump to profile number">
+      <button type="submit">JUMP TO PROFILE ↗</button>
+    </form>
+  </div>
+</section>
+
+  </main>  <footer>
+    <span>INFINITE ATLAS</span>
+    <span>ONE UNIVERSE. INFINITE IDENTITIES.</span>
+  </footer>  <script src="script.js"></script></body>
+</html>
